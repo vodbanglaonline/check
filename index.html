@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="bn">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>VOD Bangla Media Ltd.</title>
 
-<link rel="icon" type="image/png"
-href="https://raw.githubusercontent.com/vodbanglaonline/check/60bbea6b6a236c0af6d55e02ecf58bc3af1c529f/favicon.png.png">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/vodbanglaonline/check/60bbea6b6a236c0af6d55e02ecf58bc3af1c529f/favicon.png.png">
 
 <style>
 
@@ -17,7 +16,6 @@ href="https://raw.githubusercontent.com/vodbanglaonline/check/60bbea6b6a236c0af6
     padding:0;
     box-sizing:border-box;
 }
-
 
 body{
 
@@ -29,13 +27,7 @@ body{
 
     align-items:center;
 
-
-    font-family:
-    "Noto Sans Bengali",
-    "Segoe UI",
-    Arial,
-    sans-serif;
-
+    font-family:"Noto Sans Bengali","Segoe UI",Arial,sans-serif;
 
     background:linear-gradient(
         -45deg,
@@ -47,239 +39,205 @@ body{
         #e91e63
     );
 
-
     background-size:400% 400%;
-
-
     animation:gradientBG 12s ease infinite;
+
+    position:relative;
+    overflow:hidden;
 
 }
 
+body::before{
 
+    content:"";
+
+    position:fixed;
+    inset:0;
+
+    background:url("https://raw.githubusercontent.com/vodbanglaonline/check/60bbea6b6a236c0af6d55e02ecf58bc3af1c529f/favicon.png.png") center center no-repeat;
+
+    background-size:330px;
+
+    opacity:.07;
+
+    transform:rotate(-20deg);
+
+    pointer-events:none;
+
+}
 
 @keyframes gradientBG{
 
-    0%{
-        background-position:0% 50%;
-    }
-
-    50%{
-        background-position:100% 50%;
-    }
-
-    100%{
-        background-position:0% 50%;
-    }
-
+0%{
+background-position:0% 50%;
 }
 
+50%{
+background-position:100% 50%;
+}
 
+100%{
+background-position:0% 50%;
+}
+
+}
 
 .container{
 
+width:90%;
+max-width:420px;
 
-    width:90%;
+background:rgba(255,255,255,.94);
 
-    max-width:420px;
+backdrop-filter:blur(12px);
 
+padding:35px 25px;
 
-    background:rgba(255,255,255,0.94);
+border-radius:25px;
 
+text-align:center;
 
-    backdrop-filter:blur(10px);
+box-shadow:0 15px 40px rgba(0,0,0,.25);
 
+position:relative;
 
-    padding:40px 25px;
-
-
-    text-align:center;
-
-
-    border-radius:25px;
-
-
-    box-shadow:
-    0 15px 40px rgba(0,0,0,0.20);
+z-index:1;
 
 }
 
+.logo{
 
+width:110px;
 
+margin-bottom:15px;
 
+}
 
 .company-name{
 
+font-size:32px;
 
-    font-size:32px;
+font-weight:700;
 
-    font-weight:700;
+color:#00854a;
 
-    color:#00854a;
-
-    margin-bottom:15px;
+margin-bottom:10px;
 
 }
-
-
 
 .company-name span{
 
-    color:#e60000;
+color:#e60000;
 
 }
-
-
-
-
 
 .channel{
 
-    font-size:18px;
+font-size:18px;
 
-    color:#555;
+color:#555;
 
-    margin-bottom:25px;
+margin-bottom:20px;
 
 }
-
-
-
 
 .slogan{
 
-    font-size:24px;
+font-size:24px;
 
-    font-weight:bold;
+font-weight:bold;
 
-    color:#000000;
+color:#000;
+
+margin-bottom:30px;
 
 }
-
-
-
 
 .btn{
 
+display:block;
 
-    display:block;
+width:100%;
 
+padding:17px;
 
-    width:100%;
+margin:15px 0;
 
+border-radius:50px;
 
-    padding:16px;
+text-decoration:none;
 
+color:#fff;
 
-    margin:14px 0;
+font-size:18px;
 
+font-weight:bold;
 
-    border-radius:50px;
-
-
-    text-decoration:none;
-
-
-    color:white;
-
-
-    font-size:16px;
-
-
-    font-weight:bold;
-
-
-    transition:.3s;
+transition:.3s;
 
 }
-
-
-
 
 .btn:hover{
 
-    transform:scale(1.05);
+transform:scale(1.05);
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
 
 }
-
-
-
-
 
 .whatsapp{
 
-    background:#25D366;
+background:#25D366;
 
 }
-
-
-
 
 .office{
 
-    background:#128C7E;
+background:#128C7E;
 
 }
-
-
-
 
 .website{
 
-    background:#00854a;
+background:#00854A;
 
 }
-
-
-
 
 .call{
 
-    background:#e91e63;
+background:#E91E63;
 
 }
-
-
-
 
 .email{
 
-    background:#ff9800;
+background:#FF9800;
 
 }
-
-
-
 
 .footer{
 
+margin-top:25px;
 
-    margin-top:25px;
+font-size:13px;
 
+color:#666;
 
-    color:#777;
-
-
-    font-size:13px;
+line-height:22px;
 
 }
 
-
-
 </style>
-
 
 </head>
 
-
-
 <body>
-
 
 <div class="container">
 
-
-
-
+<img class="logo"
+src="https://raw.githubusercontent.com/vodbanglaonline/check/60bbea6b6a236c0af6d55e02ecf58bc3af1c529f/favicon.png.png"
+alt="VOD Bangla Logo">
 
 <div class="company-name">
 
@@ -287,16 +245,11 @@ VOD Bangla <span>Media Ltd.</span>
 
 </div>
 
-
-
-
-
 <div class="channel">
 
 News Channel
 
-<br><br>
-
+</div>
 
 <div class="slogan">
 
@@ -304,120 +257,53 @@ News Channel
 
 </div>
 
-
-</div>
-
-
-
-
-
-
-
-<!-- Personal WhatsApp -->
-
 <a class="btn whatsapp"
-
 href="https://wa.me/8801786091965"
-
 target="_blank">
 
 💬 WhatsApp
 
 </a>
 
-
-
-
-
-
-
-<!-- Office WhatsApp -->
-
 <a class="btn office"
-
-href="https://wa.me/+8801901634711"
-
+href="https://wa.me/8801901634711"
 target="_blank">
 
 🏢 Office WhatsApp
 
 </a>
 
-
-
-
-
-
-
-<!-- Website -->
-
 <a class="btn website"
-
-href="https://vodbangla.com/"
-
+href="https://vodbangla.com"
 target="_blank">
 
 🌐 Visit Website
 
 </a>
 
-
-
-
-
-
-
-<!-- Call -->
-
 <a class="btn call"
-
 href="tel:+8801901634711">
 
 📞 Call Now
 
 </a>
 
-
-
-
-
-
-
-<!-- Career Email -->
-
 <a class="btn email"
-
 href="mailto:career.vodbangla@gmail.com">
 
 📧 Job Career
 
 </a>
 
-
-
-
-
-
-
 <div class="footer">
 
-
-© 2026 VOD Bangla Media Ltd.
-
-<br>
+© 2026 VOD Bangla Media Ltd.<br>
 
 All Rights Reserved
 
-
 </div>
 
-
-
-
 </div>
-
-
 
 </body>
-
 </html>
